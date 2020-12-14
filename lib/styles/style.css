@@ -1,0 +1,52 @@
+#body_bloc
+{
+    width: 1440px;
+    margin: auto;
+}
+
+#header_bloc
+{
+    background-color: royalblue;
+    height: 115px;
+}
+
+#search_bloc
+{
+    background-color: seagreen;
+    height: 295px;
+}
+
+#main_bloc
+{
+    background-color: slateblue;
+    height: 658px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search_result_bloc
+{
+    background-color: #F2F2F2;
+    width: 880px;
+    height: 626px;
+}
+
+#popular_bloc
+{
+    background-color: #F2F2F2;
+    width: 420px;
+    height: 626px;
+}
+
+#activity_bloc
+{
+    background-color: aquamarine;
+    height: 598px;
+}
+
+#footer_bloc
+{
+    background-color: #F2F2F2;
+    height: 218px;
+}
