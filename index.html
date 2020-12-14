@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/32b2d8e1a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lib/styles/style.css">
     <title>Reservia - Hébergements</title>
 </head>
@@ -22,9 +23,32 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- Section concernant la recherche contenant un titre, un champ de recherche, une liste de filtre et une ligne informative-->
         <section id="searchBloc">
+            <!-- Le titre -->
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>  
+            <p>En plein centre ville ou en pleine nature</p>
+            <!-- le champ de recherche -->
+            <form class="formSearch" method="post" action="">
+                <i class="bgColorG fas fa-map-marker-alt"></i>
+                <input class="fdSearch" type="text" name="recherche" placeholder="Marseille, France">
+                <input class="btnSearch" type="submit" name="envoyer" value="Rechercher">
+            </form>
+            <!-- les filtres de recherche -->
+            <div class="tags">
+                <h3>Filtres</h3>
+                <div><i class="fas fa-money-bill-wave"></i><span>Economique</span></div>
+                <div><i class="fas fa-child"></i><span>Familial</span></div>
+                <div><i class="fas fa-heart"></i><span>Romantique</span></div>
+                <div><i class="fas fa-dog"></i><span>Animaux autorisés</span></div>
+            </div>
+            <!-- La bulle info -->
+            <p class="informations"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        
 
         </section>
+
         <main id="mainBloc">
             <section id="resultBloc">
 
