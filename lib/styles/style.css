@@ -1,22 +1,112 @@
-#body_bloc
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Elements généraux de la page */
+body
+{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+#bodyBloc
 {
     width: 1440px;
     margin: auto;
 }
 
-#header_bloc
+ul
 {
-    background-color: royalblue;
-    height: 115px;
+    list-style-type: none;
 }
 
-#search_bloc
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.titreH1
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.titreH2
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bgColorG
+{
+    background-color: #F2F2F2;
+}
+
+
+/* -------------------- HEADER -------------------- */
+#headerBloc
+{
+    background-color:white;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.logo
+{
+    margin-top: 44px;
+}
+
+#headerBloc nav ul
+{
+    display: flex;
+}
+
+#headerBloc nav ul li
+{
+    margin-right: 3em;
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+
+.lienH 
+{
+    border-top: 3px solid #0065FC;
+}
+
+.lienH a
+{
+    color: #0065FC;
+}
+
+.lienA a:hover
+{
+    color: #0065FC;
+}
+
+.lienI a
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+/* -------------------- SECTION RECHERCHE -------------------- */
+#searchBloc
 {
     background-color: seagreen;
     height: 295px;
 }
 
-#main_bloc
+#mainBloc
 {
     background-color: slateblue;
     height: 658px;
@@ -25,27 +115,27 @@
     align-items: center;
 }
 
-#search_result_bloc
+#resultBloc
 {
     background-color: #F2F2F2;
     width: 880px;
     height: 626px;
 }
 
-#popular_bloc
+#popularBloc
 {
     background-color: #F2F2F2;
     width: 420px;
     height: 626px;
 }
 
-#activity_bloc
+#activityBloc
 {
     background-color: aquamarine;
     height: 598px;
 }
 
-#footer_bloc
+#footerBloc
 {
     background-color: #F2F2F2;
     height: 218px;
