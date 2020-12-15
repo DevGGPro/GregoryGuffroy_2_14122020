@@ -35,6 +35,11 @@ h3{
     font-weight: bold;
 }
 
+h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .bold
 {
     font-weight: bold;
@@ -58,12 +63,16 @@ h3{
 .colorB
 {
     color: #0065FC;
+    font-size: 12px;
 }
 
 .colorG
 {
     color: #cfcfcf;
+    font-size: 12px;
 }
+
+
 
 
 /* -------------------------------------------------- HEADER -------------------------------------------------- */
@@ -82,13 +91,13 @@ h3{
     margin-top: 44px;
 }
 
-#headerBloc nav ul
+#headerBloc ul
 {
     list-style-type: none;
     display: flex;
 }
 
-#headerBloc nav ul li
+#headerBloc li
 {
     margin-right: 3em;
     height: 115px;
@@ -166,6 +175,7 @@ h3{
     border-radius: 0px 15px 15px 0px;
     color: white;
     font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -202,7 +212,7 @@ h3{
     cursor: pointer;
 }
 
-.tags div i
+.tags i
 {
     display: inline-flex;
     justify-content: center;
@@ -214,7 +224,7 @@ h3{
     color: #0065FC;
 } 
 
-.tags div span
+.tags span
 {
     padding: 0 1.3em 0 0.8em;
     font-size: 18px;
@@ -274,41 +284,46 @@ h3{
 }
 
 /* ---------- Bloc figure ---------- */
-#resultBloc a figure
+#resultBloc figure
 {
     width: 246px;
     height: 200px;
     box-sizing: border-box;
     background-color:#FFFFFF;
     margin: 0;
-
     padding: 5px;
 }
 
-#resultBloc a figure img
+#resultBloc img
 {
     width: 100%;
     height: 60%;
     border-radius: 20px 20px 0 0;
 }
 
-#resultBloc a figure figcaption
+#resultBloc figcaption
 {
     padding-left: 0.5em;
 }
 
-#resultBloc a figure figcaption p
+#resultBloc h4
 {
     margin: 0;
-    padding: 0.5em 0 0em 0em;
+}
+
+#resultBloc p
+{
+    margin: 0;
+    padding: 0.5em 0 0.5em 0em;
     font-size: 14px;
 }
 
-#resultBloc a:hover
+#resultBloc figure:hover
 {
     transform: scale(1.01);
 }
 
+/* Lien Afficher plus */
 #resultBloc h3
 {
     padding-top: 0.5em;
@@ -319,10 +334,72 @@ h3{
 {
     width: 420px;
     height: 626px;
+    box-sizing: border-box;
+    padding:  1em 2.2em 0 2.2em;
+}
+
+#popularBloc h1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#popularBloc div
+{
+    width: 343px;
+    height: 498px;
+    padding-top: 1em;
+}
+
+#popularBloc figure
+{
+    width: 343px;
+    height: 144px;
+    box-sizing: border-box;
+    background-color:#FFFFFF;
+    margin: 0 0 1.5em 0;
+    padding: 0.3em;
+    display: flex;
+}
+
+#popularBloc img
+{
+    width: 40%;
+    border-radius: 20px  0 0 20px;
+}
+
+#popularBloc figcaption
+{
+    width: 60%;
+    padding: 1em 2em 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#popularBloc h4
+{
+    margin: 0 0 0.5em 0;
+}
+
+#popularBloc p
+{
+    margin: 0;
+    font-size: 14px;
+}
+
+.note
+{
+    margin-top: auto;
+    margin-bottom: 0.5em;
+}
+
+#popularBloc figure:hover
+{
+    transform: scale(1.01);
 }
 
 
-
+/* -------------------- Section ACTIVITY -------------------- */
 #activityBloc
 {
     background-color: aquamarine;
