@@ -8,6 +8,8 @@
 </head>
 <body>
     <div id="bodyBloc">
+
+
         <!-- L'en-tête de la page contenant le logo et le menu de navigation -->
         <header id="headerBloc">
             <!-- Logo Reservia -->
@@ -24,15 +26,16 @@
             </nav>
         </header>
 
+
         <!-- Section concernant la recherche contenant un titre, un champ de recherche, une liste de filtre et une ligne informative-->
         <section id="searchBloc">
             <!-- Le titre -->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>  
             <p>En plein centre ville ou en pleine nature</p>
             <!-- le champ de recherche -->
-            <form class="formSearch" method="post" action="">
+            <form class="formSearch" method="post" action="index.html">
                 <i class="bgColorG fas fa-map-marker-alt"></i>
-                <input class="fdSearch" type="text" name="recherche" placeholder="Marseille, France">
+                <input class="fdSearch" type="text" name="recherche" placeholder="Votre recherche">
                 <input class="btnSearch" type="submit" name="envoyer" value="Rechercher">
             </form>
             <!-- les filtres de recherche -->
@@ -45,21 +48,132 @@
             </div>
             <!-- La bulle info -->
             <p class="informations"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-        
-
         </section>
 
-        <main id="mainBloc">
-            <section id="resultBloc">
 
+        <!-- Section contenant une section "hébergement" et un aside "Les plus populaires" resultat de la recherche -->
+        <main id="mainBloc">
+            <!-- Section hebergement  -->
+            <section id="resultBloc" class="bgColorG brdRadius">
+                <h1 id="ancre_hebergement">Hébergement à Marseille</h1>
+                <div>
+                    <a href="#">
+                        <figure class="brdRadius shadow">
+                            <img src="lib/assets/images/hebergement/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannobière">
+                            <figcaption>
+                                <strong>Auberge la Cannobière</strong>
+                                <p>Nuit à partir de <strong class="bold">25€</strong><br></p>
+                                <p>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorG fas fa-star"></i>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="brdRadius shadow">
+                            <img src="lib/assets/images/hebergement/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                            <figcaption>
+                                <strong>Hôtel du port</strong>
+                                <p>Nuit à partir de <strong class="bold">52€</strong><br></p>
+                                <p>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="brdRadius shadow">
+                            <img src="lib/assets/images/hebergement/small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les moulettes">
+                            <figcaption>
+                                <strong>Hôtel les moulettes</strong>
+                                <p>Nuit à partir de <strong class="bold">76€</strong><br></p>
+                                <p>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorG fas fa-star"></i>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="brdRadius shadow">
+                            <img src="lib/assets/images/hebergement/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                            <figcaption>
+                                <strong>Hôtel de la mer</strong>
+                                <p>Nuit à partir de <strong class="bold">46€</strong><br></p>
+                                <p>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorG fas fa-star"></i>
+                                    <i class="colorG fas fa-star"></i>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="brdRadius shadow">
+                            <img src="lib/assets/images/hebergement/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
+                            <figcaption>
+                                <strong>Auberge le panier</strong>
+                                <p>Nuit à partir de <strong class="bold">23€</strong><br></p>
+                                <p>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorG fas fa-star"></i>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="brdRadius shadow">
+                            <img src="lib/assets/images/hebergement/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel chez Amina">
+                            <figcaption>
+                                <strong>Hôtel chez Amina</strong>
+                                <p>Nuit à partir de <strong class="bold">96€</strong><br></p>
+                                <p>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                    <i class="colorB fas fa-star"></i>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <h3><a href="">Afficher plus</a></h3>
             </section>
-            <aside id="popularBloc">
+            <aside id="popularBloc" class="bgColorG brdRadius">
 
             </aside>
-        </main>
-        <section id="activityBloc">
+            <section id="activityBloc">
                 
-        </section>
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
         <footer id="footerBloc">
 
         </footer>
