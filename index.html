@@ -2,243 +2,262 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/32b2d8e1a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lib/styles/style.css">
     <title>Reservia - Hébergements</title>
 </head>
 <body>
-    <div id="bodyBloc">
-
+    <div id="bodyBloc" class="bg-cl-white cl-black">
 
         <!-- L'en-tête de la page contenant le logo et le menu de navigation -->
-        <header id="headerBloc">
+        <header id="headerBloc" class="flex algn-itm-ctr jst-bt bg-cl-white pad-3-5">
             <!-- Logo Reservia -->
-            <div class="logo">
+            <div class="algn-sf-end">
                 <a href="index.html"><img src="lib/assets/images/logo/reservia.svg" alt="Logo du site reservia"></a>
             </div>            
             <!-- Menu -->
-            <nav>
-                <ul>
-                    <li class="lienH"><a href="#ancre_hebergement">Hebergements</a></li>
-                    <li class="lienA"><a href="#ancre_activite">Activités</a></li>
-                    <li class="lienI"><a href="">S'inscrire</a></li>
+            <nav class="flex jst-ar">
+                <ul class="element flex algn-itm-ctr">
+                    <li class="no-list"><a class="no-txt-deco cl-blue" href="#ancre_hebergement">Hebergements</a></li>
+                </ul>
+                <ul class="element flex algn-itm-ctr">
+                    <li class="no-list"><a class="no-txt-deco cl-black cl-blue-hvr" href="#ancre_activite">Activités</a></li>
+                </ul>
+                <ul class="element flex algn-itm-ctr">
+                    <li class="no-list"><a class="no-txt-deco cl-blue bold" href="#">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
 
 
         <!-- Section concernant la recherche contenant un titre, un champ de recherche, une liste de filtre et une ligne informative-->
-        <section id="searchBloc">
+        <section id="searchBloc" class="bg-cl-white pad-3-5">
             <!-- Le titre -->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>  
             <p>En plein centre ville ou en pleine nature</p>
             <!-- le champ de recherche -->
-            <form class="formSearch" method="post" action="index.html">
-                <i class="bgColorG fas fa-map-marker-alt"></i>
-                <input class="fdSearch" type="text" name="recherche" placeholder="Votre recherche">
-                <input class="btnSearch" type="submit" name="envoyer" value="Rechercher">
+            <form class="formSearch flex" method="post" action="index.html">
+                <i class="bg-cl-grey flex jst-ctr algn-itm-ctr fas fa-map-marker-alt"></i>
+                <input class="fdSearch bold" type="text" name="recherche" placeholder="Votre recherche">
+                <input class="btnSearch bg-cl-blue cl-white bold cursor-hvr" type="submit" name="envoyer" value="Rechercher">
             </form>
             <!-- les filtres de recherche -->
-            <div class="tags">
+            <div class="tags flex algn-itm-ctr">
                 <h3>Filtres</h3>
-                <div><i class="fas fa-money-bill-wave"></i><span>Economique</span></div>
-                <div><i class="fas fa-child"></i><span>Familial</span></div>
-                <div><i class="fas fa-heart"></i><span>Romantique</span></div>
-                <div><i class="fas fa-dog"></i><span>Animaux autorisés</span></div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-money-bill-wave"></i>
+                    <span class="bold">Economique</span>
+                </div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-child"></i>
+                    <span class="bold">Familial</span>
+                </div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-heart"></i>
+                    <span class="bold">Romantique</span>
+                </div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-dog"></i>
+                    <span class="bold">Animaux autorisés</span>
+                </div>
             </div>
             <!-- La bulle info -->
-            <p class="informations"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="flex algn-itm-ctr"><i class="info flex algn-itm-ctr jst-ctr cl-blue fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
 
         <!-- Section contenant une section "hébergement" et un aside "Les plus populaires" resultat de la recherche -->
-        <main id="mainBloc">
+        <main id="mainBloc" class="bg-cl-white flex jst-bt algn-itm-ctr pad-3-5">
+
             <!-- Section hebergement  -->
-            <section id="resultBloc" class="bgColorG brdRadius">
+            <section id="resultBloc" class="bg-cl-grey bd-rad-20">
                 <h1 id="ancre_hebergement">Hébergement à Marseille</h1>
-                <div>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                <div class="ctnr-h flex jst-bt algn-itm-ctr ">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh transform bg-cl-white">
                             <img src="lib/assets/images/hebergement/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannobière">
                             <figcaption>
                                 <h4>Auberge la Cannobière</h4>
                                 <p>Nuit à partir de <strong class="bold">25€</strong><br></p>
                                 <span>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh transform bg-cl-white">
                             <img src="lib/assets/images/hebergement/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                             <figcaption>
                                 <h4>Hôtel du port</h4>
                                 <p>Nuit à partir de <strong class="bold">52€</strong><br></p>
                                 <span>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh transform bg-cl-white">
                             <img src="lib/assets/images/hebergement/small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les moulettes">
                             <figcaption>
                                 <h4>Hôtel les moulettes</h4>
                                 <p>Nuit à partir de <strong class="bold">76€</strong><br></p>
                                 <span>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh transform bg-cl-white">
                             <img src="lib/assets/images/hebergement/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                             <figcaption>
                                 <h4>Hôtel de la mer</h4>
                                 <p>Nuit à partir de <strong class="bold">46€</strong><br></p>
                                 <span>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh transform bg-cl-white">
                             <img src="lib/assets/images/hebergement/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
                             <figcaption>
                                 <h4>Auberge le panier</h4>
                                 <p>Nuit à partir de <strong class="bold">23€</strong><br></p>
                                 <span>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh transform bg-cl-white">
                             <img src="lib/assets/images/hebergement/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                             <figcaption>
                                 <h4>Hôtel chez Amina</h4>
                                 <p>Nuit à partir de <strong class="bold">96€</strong><br></p>
                                 <span>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
-                <h3><a href="">Afficher plus</a></h3>
+                <h3><a href="" class="no-txt-deco cl-black cl-blue-hvr">Afficher plus</a></h3>
             </section>
+
             <!-- Aside POPULAR -->
-            <aside id="popularBloc" class="bgColorG brdRadius">
-                <h1>Les plus populaires  <i class="algnL fas fa-chart-line"></i></h1>
-                <div>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+            <aside id="popularBloc" class="bg-cl-grey bd-rad-20">
+                <h1 class="flex jst-bt">Les plus populaires  <i class="algnL fas fa-chart-line"></i></h1>
+                <div class="ctnr-p">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh flex bg-cl-white transform cl-blue-hvr">
                             <img src="lib/assets/images/hebergement/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil matin">
-                            <figcaption>
+                            <figcaption class="flex col">
                                 <h4>Hôtel le soleil matin</h4>
                                 <p>Nuit à partir de <strong class="bold">128€</strong><br></p>
                                 <span class="note">
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh flex bg-cl-white transform cl-blue-hvr">
                             <img src="lib/assets/images/hebergement/small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambre d'hôtes">
-                            <figcaption>
+                            <figcaption class="flex col">
                                 <h4>Au coeur de l'eau Chambre d'hôtes</h4>
                                 <p>Nuit à partir de <strong class="bold">71€</strong><br></p>
                                 <span class="note">
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure class="brdRadius shadow">
+                    <a href="#" class="no-txt-deco cl-black">
+                        <figure class="bd-rad-20 bx-sh flex bg-cl-white transform cl-blue-hvr">
                             <img src="lib/assets/images/hebergement/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et blanc">
-                            <figcaption>
+                            <figcaption class="flex col">
                                 <h4>Hôtel tout bleu et blanc</h4>
                                 <p>Nuit à partir de <strong class="bold">68€</strong><br></p>
                                 <span class="note">
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorB fas fa-star"></i>
-                                    <i class="colorG fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-blue fas fa-star"></i>
+                                    <i class="cl-grey fas fa-star"></i>
                                 </span>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
             </aside>
+
             <!-- Section ACTIVITY -->
-            <section id="activityBloc">
+            <section id="activityBloc" class="flex flex-d-col">
                 <h1 id="ancre_activite">Activités à Marseille</h1>
                 <!-- Div contenant les images en flex-->
-                <div class="ctnrFlex">
+                <div class="ctnrFlex flex jst-bt algn-itm-ctr">
                     <!-- Premier element -->
-                    <div class="elementA">
-                        <a href="">
-                            <figure class="brdRadius shadow ">
+                    <div class="elementA bg-cl-white">
+                        <a href="" class="no-txt-deco cl-black">
+                            <figure class="bd-rad-20 bx-sh transform cl-blue-hvr">
                                 <img src="lib/assets/images/activites/small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
                                 <figcaption><h3>Vieux port</h3></figcaption>
                             </figure>
                         </a>
                     </div>
                     <!-- Div contenant 2 images en flex -->
-                    <div class="structure2images">
+                    <div class="structure2images flex col jst-bt">
                         <!-- Premier element -->
-                        <div class="elementB">
-                            <a href="">
-                                <figure class="brdRadius shadow ">
+                        <div class="elementB bg-cl-white">
+                            <a href="" class="no-txt-deco cl-black">
+                                <figure class="bd-rad-20 bx-sh transform cl-blue-hvr">
                                     <img src="lib/assets/images/activites/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues">
                                     <figcaption><h3>Fort de Pomégues</h3></figcaption>
                                 </figure>
                             </a>
                         </div>
                         <!-- troixieme element -->
-                        <div class="elementC">
-                            <a href="">
-                                <figure class="brdRadius shadow ">
+                        <div class="elementC bg-cl-white">
+                            <a href="" class="no-txt-deco cl-black">
+                                <figure class="bd-rad-20 bx-sh transform cl-blue-hvr">
                                     <img src="lib/assets/images/activites/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                                     <figcaption><h3>Îles du Frioul</h3></figcaption>
                                 </figure>
@@ -246,29 +265,29 @@
                         </div>
                     </div>
                     <!-- Quatrième element -->
-                    <div class="elementA">
-                        <a href="">
-                            <figure class="brdRadius shadow ">
+                    <div class="elementA bg-cl-white">
+                        <a href="" class="no-txt-deco cl-black">
+                            <figure class="bd-rad-20 bx-sh transform cl-blue-hvr">
                                 <img src="lib/assets/images/activites/small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
                                 <figcaption><h3>Parc national des Calanques</h3></figcaption>
                             </figure>
                         </a>
                     </div>
                     <!-- Div contenant 2 images en flex -->
-                    <div class="structure2images">
+                    <div class="structure2images flex col jst-bt">
                         <!-- Cinquième élément -->
-                        <div class="elementD">
-                            <a href="">
-                                <figure class="brdRadius shadow ">
+                        <div class="elementD bg-cl-white">
+                            <a href="" class="no-txt-deco cl-black">
+                                <figure class="bd-rad-20 bx-sh transform cl-blue-hvr">
                                     <img src="lib/assets/images/activites/small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Note-Dame-De-La-Garde">
                                     <figcaption><h3>Note-Dame-De-La-Garde</h3></figcaption>
                                 </figure>
                             </a>
                         </div>
                         <!-- Sixième élément -->
-                        <div class="elementE">
-                            <a href="">
-                                <figure class="brdRadius shadow ">
+                        <div class="elementE bg-cl-white">
+                            <a href="" class="no-txt-deco cl-black">
+                                <figure class="bd-rad-20 bx-sh transform cl-blue-hvr">
                                     <img src="lib/assets/images/activites/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                                     <figcaption><h3>Parc Longchamp</h3></figcaption>
                                 </figure>
@@ -280,17 +299,32 @@
         </main>
 
 
-
-
-
-
-
-
-
-
-
-        <footer id="footerBloc">
-
+        <!-- LE FOOTER -->
+        <footer id="footerBloc" class="bg-cl-grey flex jst-ctr algn-itm-ctr">
+            <div class="ctnr-f flex jst-bt">
+                <div class="ctnr-f-child">
+                    <h3>A propos</h3>
+                    <ul>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Fonctionnement du site</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Conditions générales de vente</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="ctnr-f-child">
+                    <h3>Nos hébergements</h3>
+                    <ul>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Charte qualité</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Soumettre cotre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class="ctnr-f-child">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Centre d'aide</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Nous contacter</a></li>
+                    </ul>
+                </div>    
+            </div>
         </footer>
     </div>
 </body>
