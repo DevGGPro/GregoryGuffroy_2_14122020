@@ -6,133 +6,191 @@ body
     font-family: 'Raleway', sans-serif;
     color: black;
     background-color: #FFFFFF;
+    margin-top: 0;
 }
 
 #bodyBloc
 {
-    width: 1440px;
+    width: 75%;
     margin: auto;
 }
 
-a
+.pad-3-5
+{
+    padding: 0 3.5%;
+}
+
+
+/* Les titres */
+h1{
+    font-size: 1.375em;
+    font-weight: bold;
+}
+h2{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.125em;
+    font-weight: bold;
+}
+h4{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/* Effet de style */
+.no-txt-deco
 {
     text-decoration: none;
-    color: black;
 }
-
-h1{
-    font-size: 22px;
-    font-weight: bold;
+.no-list
+{
+    list-style-type: none;
 }
-
-h2{
-    font-size: 20px;
-    font-weight: bold;
+.bx-sh
+{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
-
-h3{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-h4{
-    font-size: 16px;
-    font-weight: bold;
+.bd-rad-20
+{
+    border-radius: 20px;
 }
 
 .bold
 {
     font-weight: bold;
 }
+.transform:hover
+{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.cursor-hvr:hover
+{
+    cursor: pointer;
+}
 
-.bgColorG
+
+/* Couleur de fonds */
+.bg-cl-grey
 {
     background-color: #F2F2F2;
 }
-
-.brdRadius
+.bg-cl-blue
 {
-    border-radius: 20px;
+    background-color: #0065FC;
+}
+.bg-cl-blue-hvr:hover
+{
+    background-color: #0065FC;
+}
+.bg-cl-lblue
+{
+    background-color: #DEEBFF;
+}
+.bg-cl-white
+{
+    background-color: #FFFFFF;
 }
 
-.shadow
-{
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-}
 
-.colorB
+/* Couleur de text */
+.cl-black
+{
+    color: black;
+}
+.cl-blue
 {
     color: #0065FC;
-    font-size: 12px;
 }
-
-.colorG
+.cl-blue-hvr:hover
+{
+    color: #0065FC;
+}
+.cl-grey
 {
     color: #cfcfcf;
-    font-size: 12px;
+}
+.cl-white{
+    color: #FFFFFF;
+}
+.cl-white-hvr:hover{
+    color: #FFFFFF;
 }
 
 
+/* Display Flex */
+.flex
+{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.in-flex
+{
+    display: inline-flex;
+}
+.flex-d-col{
+    flex-direction: column;
+}
+.col
+{
+    flex-flow: column wrap;
+}
+.row
+{
+    flex-flow: row wrap;
+}
+.algn-itm-ctr
+{
+    align-items: center;
+}
+.algn-sf-end
+{
+    align-self: flex-end;
+}
+.jst-ctr
+{
+    justify-content: center;
+}
+.jst-bt
+{
+    justify-content: space-between;
+}
+.jst-ar
+{
+    justify-content: space-around;
+}
+.jst-ev
+{
+    justify-content: space-evenly;
+}
 
 
 /* -------------------------------------------------- HEADER -------------------------------------------------- */
 #headerBloc
 {
-    background-color:white;
-    height: 115px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
+    min-height: 100px;
 }
-
-.logo
+#headerBloc nav
 {
-    margin-top: 44px;
+    width: 35%;
 }
 
-#headerBloc ul
-{
-    list-style-type: none;
-    display: flex;
-}
-
-#headerBloc li
-{
-    margin-right: 3em;
-    height: 115px;
-    display: flex;
-    align-items: center;
-}
-
-.lienH 
+.element:first-child
 {
     border-top: 3px solid #0065FC;
-}
-
-.lienH a
-{
-    color: #0065FC;
-}
-
-.lienA a:hover
-{
-    color: #0065FC;
-}
-
-.lienI a
-{
-    color: #0065FC;
-    font-weight: bold;
+    padding: 0 1.5em 0 1.5em;
+    min-height: 100px;
 }
 
 
 /* -------------------------------------------------- SECTION SEARCHBLOC -------------------------------------------------- */
 #searchBloc
 {
-    background-color: #FFFFFF;
     min-height: 250px;
-    padding: 0px 50px;
 }
 
 /* Le titre h1 */
@@ -143,47 +201,30 @@ h4{
 }
 
 /* le champ de recherche et son bouton*/
-.formSearch
-{
-    display: flex;
-} 
-
 .formSearch i
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     border-radius: 15px 0px 0px 15px;
 }
-
 .fdSearch
 {
-    font-weight: bold;
     padding-left: 0.8em;
     border: #F2F2F2 solid  1px;
-    width: 200px;
-    font-size: 16px;
+    min-width: 200px;
+    font-size: 1em;
 }
-
 .btnSearch
 {
-    background-color: #0065FC;
     border: none;
-    width: 150px;
+    min-width: 150px;
     border-radius: 0px 15px 15px 0px;
-    color: white;
-    font-weight: bold;
     font-size: 16px;
-    cursor: pointer;
 }
 
 /* Les tags */
 .tags
 {
-    display: flex;
-    align-items: center;
     margin-top: 1.2em;
     margin-bottom: 2em;
 }
@@ -191,197 +232,140 @@ h4{
 {
     margin-right: 1.5em;
 }
-
-.tags div
+.tags-child
 {
     
     box-shadow: inset 0px 0px 0px 2px #D9D9D9;
     border-radius: 25px;
-    margin-right: 18px;
+    margin-right: 1.125em;
+    /* white-space: nowrap; */
 }
-
-.tags div:hover
-{
-    
-    box-shadow: inset 0px 0px 0px 2px #D9D9D9;
-    border-radius: 25px;
-    margin-right: 18px;
-    background-color: #0065FC;
-    color: #ffffff;
-    transform: scale(1.01);
-    cursor: pointer;
-}
-
 .tags i
 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     border-radius: 50%;
-    background-color: #DEEBFF;
-    color: #0065FC;
 } 
-
 .tags span
 {
-    padding: 0 1.3em 0 0.8em;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 0 1.3em 0 0.7em;
+    font-size: 1.125em;
 }
 
 /* La bulle info */
-.informations
+.info
 {
-    display: flex;
-    align-items: center;
-}
-.informations i
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0065FC;
     border: #cfcfcf solid 0.1em;
-    width: 24px;
-    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     border-radius: 25px;
     font-size: 0.8em;
     margin-right: 1em;
 }
 
+
 /* -------------------------------------------------- Section MAIN -------------------------------------------------- */
 #mainBloc
 {
-    height: 1256px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    min-height: 1250px;
 }
 
 
 /* -------------------- Section HEBERGEMENT -------------------- */
 #resultBloc
 {
-    width: 880px;
-    height: 626px;
-    box-sizing: border-box;
-    padding:  1em 2.2em 0 2.2em;
+    width: 60%;
+    padding:  1em 2.2em 1em 2.2em;
 }
-
-#resultBloc div
+.ctnr-h
 {
-    width: 800px;
-    height: 450px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    min-height: 450px;
+    
 }
 
 /* ---------- Bloc figure ---------- */
-#resultBloc figure
+.ctnr-h figure
 {
+
     width: 246px;
     height: 200px;
     box-sizing: border-box;
-    background-color:#FFFFFF;
     margin: 0;
     padding: 5px;
 }
-
-#resultBloc img
+.ctnr-h img
 {
     width: 100%;
     height: 60%;
     border-radius: 20px 20px 0 0;
 }
-
-#resultBloc figcaption
+.ctnr-h figcaption
 {
     padding-left: 0.5em;
 }
-
-#resultBloc h4
+.ctnr-h h4
 {
     margin: 0;
 }
-
-#resultBloc p
+.ctnr-h p
 {
     margin: 0;
     padding: 0.5em 0 0.5em 0em;
     font-size: 14px;
 }
-
-#resultBloc figure:hover
+.ctnr-h i
 {
-    transform: scale(1.01);
+    font-size: 14px;
 }
 
-/* Lien Afficher plus */
+/* Lien Afficher plus H3 */
 #resultBloc h3
 {
-    padding-top: 0.5em;
+    padding-top: 1em;
 }
+
 
 /* -------------------- Aside POPULAR -------------------- */
 #popularBloc
 {
-    width: 420px;
-    height: 626px;
+    width: 32%;
+    height: 625px;
     box-sizing: border-box;
-    padding:  1em 2.2em 0 2.2em;
+    padding:  1em 2.2em 1em 2.2em;
+    margin: 0;
 }
-
-#popularBloc h1
+.ctnr-p
 {
-    display: flex;
-    justify-content: space-between;
-}
-
-#popularBloc div
-{
-    width: 343px;
-    height: 498px;
     padding-top: 1em;
 }
 
-#popularBloc figure
+/* ---------- Bloc figure ---------- */
+.ctnr-p figure
 {
     width: 343px;
     height: 144px;
-    box-sizing: border-box;
-    background-color:#FFFFFF;
     margin: 0 0 1.5em 0;
     padding: 0.3em;
-    display: flex;
 }
-
-#popularBloc img
+.ctnr-p img
 {
     width: 40%;
+    height: 100%;
     border-radius: 20px  0 0 20px;
 }
 
-#popularBloc figcaption
+.ctnr-p figcaption
 {
     width: 60%;
     padding: 1em 2em 0 1em;
-    display: flex;
-    flex-direction: column;
 }
 
-#popularBloc h4
+.ctnr-p h4
 {
     margin: 0 0 0.5em 0;
 }
 
-#popularBloc p
+.ctnr-p p
 {
     margin: 0;
     font-size: 14px;
@@ -389,69 +373,38 @@ h4{
 
 .note
 {
+    font-size: 14px;
     margin-top: auto;
     margin-bottom: 0.5em;
-}
-
-#popularBloc figure:hover
-{
-    transform: scale(1.01);
 }
 
 
 /* -------------------- Section ACTIVITY -------------------- */
 #activityBloc
 {
-    width: 1340px;
-    height: 548px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.ctnrFlex
-{
-    display: flex;
     width: 100%;
-    height: 446px;
-    justify-content: space-between;
-    align-items: center;
-    align-items: flex-start;
 }
 
 .ctnrFlex h3 {
     padding: 0.9em 0 1em 1.5em;
     margin: -0.2em;
 }
-
 .ctnrFlex figure
 {
     margin: 0.2em 0.2em;
 }
 
-.ctnrFlex figure:hover
-{
-    transform: scale(1.01);
-    color: #0065FC;
-}
-
 .structure2images
 {
+    min-height: 446px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-
-
 
 /* Element A */
 .elementA figure
 {
     width: 302px;
     height: 446px;
-    background-color: #FFFFFF;
 }
 .elementA figure img
 {
@@ -466,7 +419,6 @@ h4{
 {
     width: 302px;
     height: 237px;
-    background-color: #FFFFFF;
 }
 .elementB figure img
 {
@@ -481,7 +433,6 @@ h4{
 {
     width: 302px;
     height: 165px;
-    background-color: #FFFFFF;
 }
 .elementC figure img
 {
@@ -496,7 +447,6 @@ h4{
 {
     width: 302px;
     height: 195px;
-    background-color: #FFFFFF;
 }
 .elementD figure img
 {
@@ -511,7 +461,6 @@ h4{
 {
     width: 302px;
     height: 209px;
-    background-color: #FFFFFF;
 }
 .elementE figure img
 {
@@ -522,10 +471,28 @@ h4{
 }
 
 
-
-
+/* -------------------------------------------------- FOOTER -------------------------------------------------- */
 #footerBloc
 {
-    background-color: #F2F2F2;
-    height: 218px;
+    width: 100%;
+    padding: 2% 4%;
+}
+
+.ctnr-f
+{
+    width: 100%;
+    height: 100%;
+}
+
+.ctnr-f-child
+{
+    width: 33%;
+}
+.ctnr-f-child ul
+{
+    padding: 0;
+}
+.ctnr-f-child li
+{
+    padding: 0.3em 0 0.3em 0;
 }
