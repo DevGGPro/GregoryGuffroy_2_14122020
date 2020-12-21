@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32b2d8e1a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lib/styles/style.css">
+    <title>Reservia - Hébergements</title>
+</head>
+<body>
+    <div id="bodyBloc" class="bg-cl-white cl-black">
+
+
+        <!-- Header -->
+        <header>
+           <!-- Menu -->
+           <nav>
+               <ul class="flex no-list">
+                   <!-- Logo -->
+                   <li class="m-logo flex jst-ctr algn-itm-ctr">
+                       <a class="flex jst-st algn-itm-fe" href="index.html"><img src="lib/assets/images/logo/reservia.svg" alt="Logo du site reservia"></a>
+                    </li>
+                    <!-- Lien Hébergement -->
+                    <li class="m-hebergement flex jst-ctr algn-itm-ctr">
+                        <a class="no-txt-deco cl-blue " href="#ancre_hebergement">Hébergements</a>
+                    </li>
+                    <!-- Lien Activité -->
+                    <li class="m-activite flex jst-ctr algn-itm-ctr">
+                        <a class="no-txt-deco cl-black cl-blue-hvr" href="#ancre_activite">Activités</a>
+                    </li>
+                    <!-- lien S'inscrire -->
+                    <li class="m-inscrire flex jst-ctr algn-itm-ctr">
+                        <a class="flex jst-fe no-txt-deco bold cl-blue" href="#">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            
+
+
+        <!-- Section Recherche -->
+        <section id="searchBloc" class="bg-cl-white">
+        <!-- Le titre -->
+        <div class="sb-text">
+            <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>  
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <!-- le champ de recherche -->
+        <form class="formSearch flex" method="post" action="index.html">
+            <i class="fas-loc bg-cl-grey flex jst-ctr algn-itm-ctr fas fa-map-marker-alt"></i>
+            <input class="fdSearch bold" type="text" name="recherche" placeholder="Votre recherche" autofocus>
+            <input class="btnSearch bg-cl-blue cl-white bold cursor-hvr" type="submit" name="envoyer" value="Rechercher">
+            <button class="btnSearchHidden bg-cl-blue cl-white cursor-hvr"><i class=" flex jst-ctr algn-itm-ctr fas fa-search"></i></button>
+         </form>
+        <!-- les tags -->
+        <div class="tags flex algn-itm-ctr">
+            <h3>Filtres</h3>
+            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-money-bill-wave"></i>
+                <span class="bold">Economique</span>
+            </div>
+            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-child"></i>
+                <span class="bold">Familial</span>
+            </div>
+            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-heart"></i>
+                <span class="bold">Romantique</span>
+            </div>
+            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-dog"></i>
+                <span class="bold">Animaux autorisés</span>
+            </div>
+        </div>
+        <!-- La bulle info -->
+        <div class="info flex algn-itm-ctr">
+            <span class="info-child"><i class="flex algn-itm-ctr jst-ctr cl-blue fas fa-info"></i></span>
+            <span class="info-child">Plus de 500 logements sont disponibles dans cette ville</span> 
+        </div>
+        </section>
+
+
+
+        <!-- Section Main -->    
+        <main id="mainBloc" class="flex jst-ar">
+
+            <!-- Section Resultat de la recherche -->
+            <section id="resultBloc" class="bg-cl-grey">
+                <div class="rslt-txt">
+                    <h1 id="ancre_hebergement">Hébergement à Marseille</h1>
+                </div>
+                <div class="ctnr-rslt flex jst-ar">
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="rslt-figure bd-rad-20 bx-sh transform">
+                                <div class="rslt-img">
+                                    <img src="lib/assets/images/hebergement/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannobière">
+                                </div>
+                                <figcaption class="rslt-figcap">
+                                    <h3 class="rslt-info">Auberge la Cannobière</h3>
+                                    <p class="rslt-info">Nuit à partir de <strong class="bold">25€</strong><br></p>
+                                    <span class="rslt-info">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="rslt-figure bd-rad-20 bx-sh transform">
+                                <div class="rslt-img">
+                                    <img src="lib/assets/images/hebergement/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                                </div>
+                                <figcaption class="rslt-figcap">
+                                    <h3 class="rslt-info">Hôtel du port</h3>
+                                    <p class="rslt-info">Nuit à partir de <strong class="bold">52€</strong></p>
+                                    <span class="rslt-info">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="rslt-figure bd-rad-20 bx-sh transform">
+                                <div class="rslt-img">
+                                    <img src="lib/assets/images/hebergement/small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les moulettes">
+                                </div>
+                                <figcaption class="rslt-figcap">
+                                    <h3 class="rslt-info">Hôtel les moulettes</h3>
+                                    <p class="rslt-info">Nuit à partir de <strong class="bold">76€</strong></p>
+                                    <span class="rslt-info">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="rslt-figure bd-rad-20 bx-sh transform">
+                                <div class="rslt-img">
+                                    <img src="lib/assets/images/hebergement/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                                </div>
+                                <figcaption class="rslt-figcap">
+                                    <h3 class="rslt-info">Hôtel de la mer</h3>
+                                    <p class="rslt-info">Nuit à partir de <strong class="bold">46€</strong></p>
+                                    <span class="rslt-info">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="rslt-figure bd-rad-20 bx-sh transform">
+                                <div class="rslt-img">
+                                    <img src="lib/assets/images/hebergement/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
+                                </div>
+                                <figcaption class="rslt-figcap">
+                                    <h3 class="rslt-info">Auberge le panier</h3>
+                                    <p class="rslt-info">Nuit à partir de <strong class="bold">23€</strong></p>
+                                    <span class="rslt-info">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="rslt-figure bd-rad-20 bx-sh transform">
+                                <div class="rslt-img">
+                                    <img src="lib/assets/images/hebergement/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                                </div>
+                                <figcaption class="rslt-figcap">
+                                    <h3 class="rslt-info">Hôtel chez Amina</h3>
+                                    <p class="rslt-info">Nuit à partir de <strong class="bold">96€</strong></p>
+                                    <span class="rslt-info">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="rslt-txt">
+                    <h2><a href="" class="no-txt-deco cl-black cl-blue-hvr">Afficher plus</a></h2>
+                </div>
+            </section> 
+
+
+            <!-- Aside POPULAR -->
+            <aside id="popularBloc" class="bg-cl-grey">
+                <div class="pb-txt">
+                    <h1 class="flex jst-bt">Les plus populaires <i class="fas fa-chart-line"></i></h1>
+                </div>
+                <div class="ctnr-pb flex jst-ar">
+                    <div class="element">
+                        <a href="#" class="flex jst-ctr no-txt-deco cl-black cl-blue-hvr">
+                            <figure class="pb-figure bd-rad-20 flex bx-sh transform">
+                                <div class="pb-img">
+                                    <img src="lib/assets/images/hebergement/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil matin">
+                                </div>
+                                <figcaption class="pb-figcap">
+                                    <h3 class="pb-info">Hôtel le soleil matin</h3>
+                                    <p class="pb-info">Nuit à partir de <strong class="bold">128€</strong></p>
+                                    <span class="pb-info flex algn-itm-fe">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="#" class="flex jst-ctr no-txt-deco cl-black cl-blue-hvr">
+                            <figure class="pb-figure bd-rad-20 flex bx-sh transform">
+                                <div class="pb-img">
+                            <img src="lib/assets/images/hebergement/small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambre d'hôtes">
+                                </div>
+                                <figcaption class="pb-figcap">
+                                    <h3 class="pb-info">Au coeur de l'eau Chambre d'hôtes</h3>
+                                    <p class="pb-info">Nuit à partir de <strong class="bold">71€</strong></p>
+                                    <span class="pb-info flex algn-itm-fe">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                        </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="element">
+                        <a href="#" class="flex jst-ctr no-txt-deco cl-black cl-blue-hvr">
+                            <figure class="pb-figure bd-rad-20 flex bx-sh transform">
+                                <div class="pb-img">
+                                    <img src="lib/assets/images/hebergement/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et blanc">
+                                </div>
+                                <figcaption class="pb-figcap">
+                                    <h3 class="pb-info">Hôtel tout bleu et blanc</h3>
+                                    <p class="pb-info">Nuit à partir de <strong class="bold">68€</strong></p>
+                                    <span class="pb-info flex algn-itm-fe">
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-blue fas fa-star"></i>
+                                        <i class="cl-grey fas fa-star"></i>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+
+            <!-- Section Activitée -->
+            <section id="activiteBloc" class="flex jst-ctr">
+                <div class="act-txt">
+                    <h1 id="ancre_activite">Activités à Marseille</h1>
+                </div>
+                <div class="ctnr-act flex col algn-itm-ctr jst-ar">
+                    <!-- Premier element -->
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="act-figure bd-rad-20 bx-sh transform">
+                                <div class="act-img">
+                                    <img src="lib/assets/images/activites/small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+                                </div>
+                                <figcaption class="act-figcap">
+                                    <h3 class="act-info">Vieux port</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Deuxième element -->
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="act-figure bd-rad-20 bx-sh transform">
+                                <div class="act-img">
+                                    <img src="lib/assets/images/activites/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues">
+                                </div>
+                                <figcaption class="act-figcap">
+                                    <h3 class="act-info">Fort de Pomégues</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- troixième element -->
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="act-figure bd-rad-20 bx-sh transform">
+                                <div class="act-img">
+                                    <img src="lib/assets/images/activites/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                                </div>
+                                <figcaption class="act-figcap">
+                                    <h3 class="act-info">Îles du Frioul</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Quatrième element -->
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="act-figure bd-rad-20 bx-sh transform">
+                                <div class="act-img">
+                                    <img src="lib/assets/images/activites/small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
+                                </div>
+                                <figcaption class="act-figcap">
+                                    <h3 class="act-info">Parc national des Calanques</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Cinquième element -->
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="act-figure bd-rad-20 bx-sh transform">
+                                <div class="act-img">
+                                    <img src="lib/assets/images/activites/small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Note-Dame-De-La-Garde">
+                                </div>
+                                <figcaption class="act-figcap">
+                                    <h3 class="act-info">Note-Dame-De-La-Garde</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Sixième element -->
+                    <div class="element">
+                        <a href="" class="no-txt-deco cl-black flex jst-ctr cl-blue-hvr">
+                            <figure class="act-figure bd-rad-20 bx-sh transform">
+                                <div class="act-img">
+                                    <img src="lib/assets/images/activites/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                                </div>
+                                <figcaption class="act-figcap">
+                                    <h3 class="act-info">Parc Longchamp</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </section> 
+
+        </main>
+
+
+
+
+
+        <!-- LE FOOTER -->
+        <footer id="footerBloc" class="bg-cl-grey flex jst-ctr algn-itm-ctr">
+            <div class="ctnr-f flex jst-bt">
+                <div class="ctnr-f-child">
+                    <h3>A propos</h3>
+                    <ul>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Fonctionnement du site</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Conditions générales de vente</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="ctnr-f-child">
+                    <h3>Nos hébergements</h3>
+                    <ul>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Charte qualité</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Soumettre cotre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class="ctnr-f-child">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Centre d'aide</a></li>
+                        <li class="no-list"><a href="" class="no-txt-deco cl-black cl-blue-hvr">Nous contacter</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
