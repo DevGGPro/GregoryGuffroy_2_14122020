@@ -174,10 +174,8 @@ header nav ul li{
     order: 1; 
 }
 .m-logo a{
-    width: 100%;
     height: 100%;
     padding-left: 1em;
-
 }
 /* Lien Hébergement */
 .m-hebergement{
