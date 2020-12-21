@@ -1,27 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
-/* -------------------------------------------------- Elements généraux de la page -------------------------------------------------- */
+/* ------------------------------ Général ------------------------------ */
+/* Body de la page */
 body
 {
     font-family: 'Raleway', sans-serif;
     color: black;
     background-color: #FFFFFF;
-    margin-top: 0;
-}
-
-#bodyBloc
-{
-    width: 75%;
-    margin: auto;
-}
-
-.pad-3-5
-{
-    padding: 0 3.5%;
+    font-size: 16px;
+    margin: 0;
 }
 
 
-/* Les titres */
+/* ---------- Les titres ----------*/
 h1{
     font-size: 1.375em;
     font-weight: bold;
@@ -40,77 +31,60 @@ h4{
 }
 
 
-/* Effet de style */
-.no-txt-deco
-{
+/* ---------- Effet de style ----------*/
+.no-txt-deco{
     text-decoration: none;
 }
-.no-list
-{
+.no-list{
     list-style-type: none;
 }
-.bx-sh
-{
+.bx-sh{
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
-.bd-rad-20
-{
+.bd-rad-20{
     border-radius: 20px;
 }
-
-.bold
-{
+.bold{
     font-weight: bold;
 }
-.transform:hover
-{
+.transform:hover{
     transform: scale(1.05);
     transition: 0.5s;
 }
-.cursor-hvr:hover
-{
+.cursor-hvr:hover{
     cursor: pointer;
 }
 
 
-/* Couleur de fonds */
-.bg-cl-grey
-{
+/* ---------- Couleur de fonds ---------- */
+.bg-cl-grey{
     background-color: #F2F2F2;
 }
-.bg-cl-blue
-{
+.bg-cl-blue{
     background-color: #0065FC;
 }
-.bg-cl-blue-hvr:hover
-{
+.bg-cl-blue-hvr:hover{
     background-color: #0065FC;
 }
-.bg-cl-lblue
-{
+.bg-cl-lblue{
     background-color: #DEEBFF;
 }
-.bg-cl-white
-{
+.bg-cl-white{
     background-color: #FFFFFF;
 }
 
 
-/* Couleur de text */
-.cl-black
-{
+/* ---------- Couleur de text ---------- */
+.cl-black{
     color: black;
 }
-.cl-blue
-{
+.cl-blue{
     color: #0065FC;
 }
-.cl-blue-hvr:hover
-{
+.cl-blue-hvr:hover{
     color: #0065FC;
 }
-.cl-grey
-{
+.cl-grey{
     color: #cfcfcf;
 }
 .cl-white{
@@ -121,140 +95,190 @@ h4{
 }
 
 
-/* Display Flex */
-.flex
-{
+/* ---------- Display Flex ---------- */
+.flex{
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-.in-flex
-{
+.in-flex{
     display: inline-flex;
 }
 .flex-d-col{
     flex-direction: column;
 }
-.col
-{
+.col{
     flex-flow: column wrap;
 }
-.row
-{
+.row{
     flex-flow: row wrap;
 }
-.algn-itm-ctr
-{
+.algn-itm-ctr{
     align-items: center;
 }
-.algn-sf-end
-{
+.algn-sf-end{
     align-self: flex-end;
 }
-.jst-ctr
-{
+.algn-itm-fe{
+    align-items: flex-end;
+}
+.jst-ctr{
     justify-content: center;
 }
-.jst-bt
-{
+.jst-bt{
     justify-content: space-between;
 }
-.jst-ar
-{
+.jst-ar{
     justify-content: space-around;
 }
-.jst-ev
-{
+.jst-ev{
     justify-content: space-evenly;
 }
+.jst-st{
+    justify-content: flex-start;
+}
+.jst-fe{
+    justify-content: flex-end;
+}
 
 
-/* -------------------------------------------------- HEADER -------------------------------------------------- */
-#headerBloc
-{
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------ BodyBloc ------------------------------ */
+/* ---------------------------------------------------------------------- */
+/* Div BodyBloc */
+#bodyBloc{
+    width: 75%;
+    margin: auto;
+}
+
+
+
+/* ------------------------------------------------ */
+/* -------------------- Header -------------------- */
+/* ------------------------------------------------ */
+/* Menu */
+header nav{
+    width: 100%;
+}
+header nav ul{
+    width: 100%;
+    padding: 0;
+}
+header nav ul li{
     min-height: 100px;
 }
-#headerBloc nav
-{
-    width: 35%;
+/* Logo */
+.m-logo{
+    width: 64%;
+    order: 1; 
+}
+.m-logo a{
+    width: 100%;
+    height: 100%;
+    padding-left: 1em;
+
+}
+/* Lien Hébergement */
+.m-hebergement{
+    width: 12%;
+    order: 2;
+    border-top: #0065FC solid 3px;
+}
+/* Lien Activité */
+.m-activite{
+    width: 12%;
+    order: 3;
+}
+/* Lien S'incrire */
+.m-inscrire{
+    width: 12%;
+    order: 4;
 }
 
-.element:first-child
-{
-    border-top: 3px solid #0065FC;
-    padding: 0 1.5em 0 1.5em;
-    min-height: 100px;
+
+
+/* ----------------------------------------------------------- */
+/* -------------------- Section Recherche -------------------- */
+/* ----------------------------------------------------------- */
+#searchBloc{
+    width: 100%;
 }
-
-
-/* -------------------------------------------------- SECTION SEARCHBLOC -------------------------------------------------- */
-#searchBloc
-{
-    min-height: 250px;
+/* Le titre h1 et le p*/
+.sb-text{
+    width: 100%;
+    padding-left: 1em;
+    box-sizing: border-box;
 }
-
-/* Le titre h1 */
-#searchBloc h1
-{
-    padding-top: 0.5em;
+.sb-text h1{
+    width: 80%;
     margin-bottom: -0.5em;
 }
-
+.sb-text p{
+    width: 80%;
+}
 /* le champ de recherche et son bouton*/
-.formSearch i
-{
-    min-width: 50px;
+.formSearch{
+    width: 100%;
     min-height: 50px;
+    padding-left: 1em;
+}
+.fas-loc{
+    min-width: 50px;
     border-radius: 15px 0px 0px 15px;
 }
-.fdSearch
-{
+.fdSearch{
     padding-left: 0.8em;
     border: #F2F2F2 solid  1px;
     min-width: 200px;
     font-size: 1em;
 }
-.btnSearch
-{
+.btnSearch{
     border: none;
     min-width: 150px;
     border-radius: 0px 15px 15px 0px;
     font-size: 16px;
+    display: block;
 }
-
+.btnSearchHidden{
+    border: none;
+    min-width: 55px;
+    border-radius: 0px 15px 15px 0px;
+    display: none;
+}
 /* Les tags */
-.tags
-{
+.tags{
+    width: 100%;
     margin-top: 1.2em;
-    margin-bottom: 2em;
+    padding-left: 1em;
+    box-sizing: border-box;
 }
-.tags h3
-{
+.tags h3{
     margin-right: 1.5em;
 }
-.tags-child
-{
-    
+.tags-child{
     box-shadow: inset 0px 0px 0px 2px #D9D9D9;
     border-radius: 25px;
-    margin-right: 1.125em;
-    /* white-space: nowrap; */
+    margin-right: 1em;
 }
-.tags i
-{
+.tags i{
     min-width: 50px;
     min-height: 50px;
     border-radius: 50%;
 } 
-.tags span
-{
-    padding: 0 1.3em 0 0.7em;
+.tags span{
+    padding: 0 1em 0 0.3em;
     font-size: 1.125em;
 }
-
 /* La bulle info */
-.info
-{
+.info{
+    width: 100%;
+    padding: 1em;
+}
+.info .info-child:first-child{
+    width: 25px;
+}
+.info i{
     border: #cfcfcf solid 0.1em;
     min-width: 24px;
     min-height: 24px;
@@ -262,237 +286,698 @@ h4{
     font-size: 0.8em;
     margin-right: 1em;
 }
-
-
-/* -------------------------------------------------- Section MAIN -------------------------------------------------- */
-#mainBloc
-{
-    min-height: 1250px;
+.info .info-child:last-child{
+    padding-left: 0.5em;
+    width: 80%;
 }
 
 
+
+/* ---------------------------------------------- */
+/* -------------------- MAIN -------------------- */
+/* ---------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------- */
 /* -------------------- Section HEBERGEMENT -------------------- */
-#resultBloc
-{
-    width: 60%;
-    padding:  1em 2.2em 1em 2.2em;
+/* ------------------------------------------------------------- */
+/* La section ResultatBloc */
+#resultBloc{
+    width: 65%;
+    padding: 1em 0;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
-.ctnr-h
-{
-    min-height: 450px;
-    
+.rslt-txt{
+    width: 100%;
+    margin-top: 0;
+    padding: 0 1em;
+    box-sizing: border-box;
 }
-
-/* ---------- Bloc figure ---------- */
-.ctnr-h figure
-{
-
+/* Le conteneur des éléments */
+.ctnr-rslt{
+    width: 100%;
+    margin: 0;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+}
+/* Les éléments */
+.ctnr-rslt .element{
     width: 246px;
     height: 200px;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+.ctnr-rslt .element a{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.rslt-figure{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+/* La div de l'image */
+.rslt-img{
+    width: 100%;
+    height: 60%;
+}
+/* l'image */
+.rslt-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+/* Le conteneur des infos de l'élément */
+.rslt-figcap{
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.5em 0 0 1em;
+}
+.rslt-figcap .rslt-info:first-child{
+    width: 100%;
+    height: 40%;
+    margin: 0;
+}
+.rslt-figcap .rslt-info:nth-child(2){
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    font-size: 14px;
+}
+.rslt-figcap .rslt-info:last-child{
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+
+/* ------------------------------------------------------- */
+/* -------------------- Aside POPULAR -------------------- */
+/* ------------------------------------------------------- */
+#popularBloc{
+    min-width: 400px;
+    width: 30%;
+    padding: 1em 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+/* Le titre du bloc */
+.pb-txt{
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+/* Le conteneur des elements */
+.ctnr-pb{
+    width: 100%;
+    margin: 0;
+}
+/* Les elements */
+.ctnr-pb .element{
+    width: 100%;
+    height: 144px;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+.ctnr-pb .element a{
+    width: 100%;
+    height: 100%;
+}
+.pb-figure{
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 5px;
 }
-.ctnr-h img
-{
-    width: 100%;
-    height: 60%;
-    border-radius: 20px 20px 0 0;
-}
-.ctnr-h figcaption
-{
-    padding-left: 0.5em;
-}
-.ctnr-h h4
-{
-    margin: 0;
-}
-.ctnr-h p
-{
-    margin: 0;
-    padding: 0.5em 0 0.5em 0em;
-    font-size: 14px;
-}
-.ctnr-h i
-{
-    font-size: 14px;
-}
-
-/* Lien Afficher plus H3 */
-#resultBloc h3
-{
-    padding-top: 1em;
-}
-
-
-/* -------------------- Aside POPULAR -------------------- */
-#popularBloc
-{
-    width: 32%;
-    height: 625px;
-    box-sizing: border-box;
-    padding:  1em 2.2em 1em 2.2em;
-    margin: 0;
-}
-.ctnr-p
-{
-    padding-top: 1em;
-}
-
-/* ---------- Bloc figure ---------- */
-.ctnr-p figure
-{
-    width: 343px;
-    height: 144px;
-    margin: 0 0 1.5em 0;
-    padding: 0.3em;
-}
-.ctnr-p img
-{
+/* La div de l'image */
+.pb-img{
     width: 40%;
     height: 100%;
-    border-radius: 20px  0 0 20px;
+    border-radius: 20px 0 0 20px;
 }
-
-.ctnr-p figcaption
-{
+/* L'image */
+.pb-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+/* Le conteneur des infos de l'élément */
+.pb-figcap{
     width: 60%;
-    padding: 1em 2em 0 1em;
+    box-sizing: border-box;
+    padding: 1em;
 }
+.pb-figcap .pb-info:first-child{
+    width: 85%;
+    height: 45%;
+    margin: 0;
 
-.ctnr-p h4
-{
-    margin: 0 0 0.5em 0;
 }
-
-.ctnr-p p
-{
+.pb-figcap .pb-info:nth-child(2){
+    width: 100%;
+    height: 20%;
     margin: 0;
     font-size: 14px;
+
 }
-
-.note
-{
-    font-size: 14px;
-    margin-top: auto;
-    margin-bottom: 0.5em;
-}
-
-
-/* -------------------- Section ACTIVITY -------------------- */
-#activityBloc
-{
+.pb-figcap .pb-info:last-child{
     width: 100%;
+    height: 35%;
+    font-size: 12px;
 }
 
-.ctnrFlex h3 {
-    padding: 0.9em 0 1em 1.5em;
-    margin: -0.2em;
-}
-.ctnrFlex figure
-{
-    margin: 0.2em 0.2em;
-}
 
-.structure2images
-{
-    min-height: 446px;
+
+/* ----------------------------------------------------------- */
+/* -------------------- Section Activitée -------------------- */
+/* ----------------------------------------------------------- */
+#activiteBloc{
+    width: 100%;
+    padding: 1em 0;
+    box-sizing: border-box;
+}
+.act-txt{
+    width: 100%;
+    margin: 0;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+/* Le conteneur des elements */
+.ctnr-act{
+    width: 95%;
+    height: 450px;
+    margin: 0;
+}
+/* Les différents éléments */
+.ctnr-act .element a{
+    width: 100%;
     height: 100%;
+    box-sizing: border-box;
+}
+.ctnr-act figure{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Premier élément */
+.ctnr-act .element:first-child{
+    width: 22%;
+    height: 95%;
+    box-sizing: border-box;
+}
+.ctnr-act .element:first-child .act-img{
+    width: 100%;
+    height: 85%;
+}
+/* Deuxième élément */
+.ctnr-act .element:nth-child(2){
+    width: 22%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.ctnr-act .element:nth-child(2) .act-img{
+    width: 100%;
+    height: 75%;
+}
+/* Troixième élément */
+.ctnr-act .element:nth-child(3){
+    width: 22%;
+    height: 40%;
+    box-sizing: border-box;
+}
+.ctnr-act .element:nth-child(3) .act-img{
+    width: 100%;
+    height: 70%;
+}
+/* Quatrième élément */
+.ctnr-act .element:nth-child(4){
+    width: 22%;
+    height: 95%;
+    box-sizing: border-box;
+}
+.ctnr-act .element:nth-child(4) .act-img{
+    width: 100%;
+    height: 85%;
+}
+/* Cinquième élément */
+.ctnr-act .element:nth-child(5){
+    width: 22%;
+    height: 40%;
+    box-sizing: border-box;
+}
+.ctnr-act .element:nth-child(5) .act-img{
+    width: 100%;
+    height: 70%;
+}
+/* Sixième élément */
+.ctnr-act .element:nth-child(6){
+    width: 22%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.ctnr-act .element:nth-child(6) .act-img{
+    width: 100%;
+    height: 75%;
 }
 
-/* Element A */
-.elementA figure
-{
-    width: 302px;
-    height: 446px;
-}
-.elementA figure img
-{
+/* L'image */
+.act-img img{
     width: 100%;
-    height: 88%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-
-/* Element B */
-.elementB figure
-{
-    width: 302px;
-    height: 237px;
-}
-.elementB figure img
-{
+/* Le conteneur de l'info de l'élément */
+.act-figcap{
     width: 100%;
-    height: 78%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    height: 30%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 1em;
 }
-
-/* Element C */
-.elementC figure
-{
-    width: 302px;
-    height: 165px;
-}
-.elementC figure img
-{
+.act-figcap h3{
     width: 100%;
-    height: 69%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
-
-/* Element D */
-.elementD figure
-{
-    width: 302px;
-    height: 195px;
-}
-.elementD figure img
-{
-    width: 100%;
-    height: 77%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
-
-/* Element E */
-.elementE figure
-{
-    width: 302px;
-    height: 209px;
-}
-.elementE figure img
-{
-    width: 100%;
-    height: 76%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.5em 0 0 0;
 }
 
 
-/* -------------------------------------------------- FOOTER -------------------------------------------------- */
-#footerBloc
-{
+
+/* ------------------------------------------------ */
+/* -------------------- FOOTER -------------------- */
+/* ------------------------------------------------ */
+#footerBloc{
     width: 100%;
     padding: 2% 4%;
 }
-
-.ctnr-f
-{
+.ctnr-f{
     width: 100%;
     height: 100%;
 }
-
-.ctnr-f-child
-{
+.ctnr-f-child{
     width: 33%;
 }
-.ctnr-f-child ul
-{
+.ctnr-f-child{
+    box-sizing: border-box;
+    padding-right: 1em;
+}
+.ctnr-f-child ul{
     padding: 0;
 }
-.ctnr-f-child li
-{
+.ctnr-f-child li{
     padding: 0.3em 0 0.3em 0;
+}
+
+    
+
+/* ----------------------------------------------------- */
+/* -------------------- Media Query -------------------- */
+/* ----------------------------------------------------- */
+@media (min-width:1550px) and (max-width:1650px){
+    /* Modifie la taille max/min des elements du bloc Hébergement */
+    .ctnr-rslt .element{
+        min-width: 246px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media (min-width:1185px) and (max-width:1550px){
+    /* Section HEBERGEMENT */
+    #resultBloc{
+        background-color: #FFFFFF;
+        border-radius: 0;
+        width: 100%;
+        order: 2;
+    }
+    .ctnr-rslt .element{
+        min-width: 246px;
+        max-width: 380px;
+        width: 100%;
+    }
+    /* Aside POPULAIRE */
+    #popularBloc
+    {
+        width: 100%;
+        border-radius: 0;
+        order: 1;
+    }
+    .ctnr-pb{
+        justify-content: space-between;
+    }
+    .ctnr-pb .element{
+        width: 50%;
+    }
+
+    /* Section ACTIVITE */
+    #activiteBloc{
+        order: 3;
+    }    
+} 
+
+@media (min-width:450px) and (max-width:1185px){
+    #bodyBloc{
+        width: 100%;
+        margin: auto;
+    }
+
+    /* HEADER */
+    header nav ul li{
+        width: 50%;
+        min-height: 50px;
+    }
+    /* Logo */
+    .m-logo{
+        width: 50%;
+        order: 1; 
+    }
+    .m-logo a{
+        width: 80%;
+    }
+    /* Lien S'incrire */
+    .m-inscrire{
+        width: 50%;
+        order: 2;
+    }
+    .m-inscrire a{
+        width: 80%;
+    }
+    /* Lien Hébergement */
+    .m-hebergement{
+        width: 50%;
+        order: 3;
+        border: none;
+        border-bottom: #0065FC solid 3px;
+    }
+    /* Lien Activité */
+    .m-activite{
+        width: 50%;
+        order: 4;
+        border-bottom: #cfcfcf solid 3px;
+    }
+
+    /* Section HEBERGEMENT */
+    #resultBloc{
+        background-color: #FFFFFF;
+        border-radius: 0;
+        width: 100%;
+        order: 2;
+    }
+    .ctnr-rslt .element{
+        min-width: 246px;
+        max-width: 380px;
+        width: 100%;
+    }
+
+    /* Aside POPULAIRE */
+    #popularBloc
+    {
+        width: 100%;
+        border-radius: 0;
+        order: 1;
+    }
+
+    /* Section ACTIVITE */
+    #activiteBloc{
+        order: 3;
+    }   
+    .ctnr-act{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    /* Premier élément */
+    .ctnr-act .element:first-child{
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:first-child .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Deuxième élément */
+    .ctnr-act .element:nth-child(2){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(2) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Troixième élément */
+    .ctnr-act .element:nth-child(3){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(3) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Quatrième élément */
+    .ctnr-act .element:nth-child(4){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(4) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Cinquième élément */
+    .ctnr-act .element:nth-child(5){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(5) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Sixième élément */
+    .ctnr-act .element:nth-child(6){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(6) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+}
+
+@media (max-width:450px){
+    #bodyBloc{
+        width: 100%;
+        margin: auto;
+    }
+
+    /* HEADER */
+    header nav ul li{
+        width: 50%;
+        min-height: 50px;
+    }
+    /* Logo */
+    .m-logo{
+        width: 50%;
+        order: 1; 
+    }
+    .m-logo a{
+        width: 80%;
+    }
+    /* Lien S'incrire */
+    .m-inscrire{
+        width: 50%;
+        order: 2;
+    }
+    .m-inscrire a{
+        width: 80%;
+    }
+    /* Lien Hébergement */
+    .m-hebergement{
+        width: 50%;
+        order: 3;
+        border: none;
+        border-bottom: #0065FC solid 3px;
+    }
+    /* Lien Activité */
+    .m-activite{
+        width: 50%;
+        order: 4;
+        border-bottom: #cfcfcf solid 3px;
+    }
+
+    /* Section Recherche */
+    .formSearch{
+        justify-content: center;
+        padding: 0;
+    }
+    .btnSearch{
+        display: none;
+    }
+    .btnSearchHidden{
+        display: block;
+    }
+    .tags h3{
+        width: 100%;
+    }
+    .tags-child{
+        margin-bottom: 1em;
+    }
+
+    /* Section HEBERGEMENT */
+    #resultBloc{
+        background-color: #FFFFFF;
+        border-radius: 0;
+        width: 100%;
+        order: 2;
+    }
+    .ctnr-rslt .element{
+        min-width: 246px;
+        max-width: 380px;
+        width: 100%;
+    }
+
+    /* Aside POPULAIRE */
+    #popularBloc
+    {
+        width: 100%;
+        border-radius: 0;
+        order: 1;
+    }
+
+    /* Section ACTIVITE */
+    #activiteBloc{
+        order: 3;
+    }   
+    .ctnr-act{
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    /* Premier élément */
+    .ctnr-act .element:first-child{
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:first-child .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Deuxième élément */
+    .ctnr-act .element:nth-child(2){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(2) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Troixième élément */
+    .ctnr-act .element:nth-child(3){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(3) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Quatrième élément */
+    .ctnr-act .element:nth-child(4){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(4) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Cinquième élément */
+    .ctnr-act .element:nth-child(5){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(5) .act-img{
+        width: 100%;
+        height: 70%;
+        }
+    /* Sixième élément */
+    .ctnr-act .element:nth-child(6){
+        min-width: 246px;
+        max-width: 340px;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 0.5em 0;
+        }
+    .ctnr-act .element:nth-child(6) .act-img{
+        width: 100%;
+        height: 70%;
+    }
+
+    /* FOOTER */
+    .ctnr-f-child{
+        width: 50%;
+    }
 }
