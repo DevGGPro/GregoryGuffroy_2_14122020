@@ -632,8 +632,7 @@ header nav ul li{
         width: 100%;
     }
     /* Aside POPULAIRE */
-    #popularBloc
-    {
+    #popularBloc{
         width: 100%;
         border-radius: 0;
         order: 1;
@@ -706,8 +705,7 @@ header nav ul li{
     }
 
     /* Aside POPULAIRE */
-    #popularBloc
-    {
+    #popularBloc{
         width: 100%;
         border-radius: 0;
         order: 1;
@@ -724,8 +722,8 @@ header nav ul li{
         height: auto;
         margin: 0;
     }
-    /* Premier élément */
-    .ctnr-act .element:first-child{
+    /* les éléments */
+    #activiteBloc .ctnr-act .element{
         min-width: 246px;
         max-width: 340px;
         width: 100%;
@@ -733,72 +731,7 @@ header nav ul li{
         box-sizing: border-box;
         margin: 0.5em 0;
         }
-    .ctnr-act .element:first-child .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Deuxième élément */
-    .ctnr-act .element:nth-child(2){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(2) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Troixième élément */
-    .ctnr-act .element:nth-child(3){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(3) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Quatrième élément */
-    .ctnr-act .element:nth-child(4){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(4) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Cinquième élément */
-    .ctnr-act .element:nth-child(5){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(5) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Sixième élément */
-    .ctnr-act .element:nth-child(6){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(6) .act-img{
+    #activiteBloc .ctnr-act .element .act-img{
         width: 100%;
         height: 70%;
         }
@@ -877,8 +810,7 @@ header nav ul li{
     }
 
     /* Aside POPULAIRE */
-    #popularBloc
-    {
+    #popularBloc{
         width: 100%;
         border-radius: 0;
         order: 1;
@@ -895,8 +827,8 @@ header nav ul li{
         height: auto;
         margin: 0;
     }
-    /* Premier élément */
-    .ctnr-act .element:first-child{
+    /* les éléments */
+    #activiteBloc .ctnr-act .element{
         min-width: 246px;
         max-width: 340px;
         width: 100%;
@@ -904,75 +836,10 @@ header nav ul li{
         box-sizing: border-box;
         margin: 0.5em 0;
         }
-    .ctnr-act .element:first-child .act-img{
+    #activiteBloc .ctnr-act .element .act-img{
         width: 100%;
         height: 70%;
         }
-    /* Deuxième élément */
-    .ctnr-act .element:nth-child(2){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(2) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Troixième élément */
-    .ctnr-act .element:nth-child(3){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(3) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Quatrième élément */
-    .ctnr-act .element:nth-child(4){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(4) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Cinquième élément */
-    .ctnr-act .element:nth-child(5){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(5) .act-img{
-        width: 100%;
-        height: 70%;
-        }
-    /* Sixième élément */
-    .ctnr-act .element:nth-child(6){
-        min-width: 246px;
-        max-width: 340px;
-        width: 100%;
-        height: 200px;
-        box-sizing: border-box;
-        margin: 0.5em 0;
-        }
-    .ctnr-act .element:nth-child(6) .act-img{
-        width: 100%;
-        height: 70%;
-    }
 
     /* FOOTER */
     .ctnr-f-child{
