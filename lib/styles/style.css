@@ -181,23 +181,37 @@ header nav ul li{
 .m-hebergement{
     width: 12%;
     order: 2;
-    border-top: #0065FC solid 3px;
+    border-top: transparent solid 2px;
+}
+.m-hebergement:hover{
+    border-top: #0065FC solid 2px;
+}
+.m-hebergement:hover a{
+    color: #0065FC;
 }
 /* Lien Activité */
 .m-activite{
     width: 12%;
     order: 3;
+    border-top: transparent solid 2px;
+}
+.m-activite:hover{
+    border-top: #0065FC solid 2px;
+}
+.m-activite:hover a{
+    color: #0065FC;
 }
 /* Lien S'incrire */
 .m-inscrire{
     width: 12%;
     order: 4;
+    border-top: transparent solid 2px;
 }
 
-
+#0065FC
 
 /* ----------------------------------------------------------- */
-/* -------------------- Section Recherche -------------------- */
+/* -------------------- DIV Recherche -------------------- */
 /* ----------------------------------------------------------- */
 #searchBloc{
     width: 100%;
@@ -381,7 +395,7 @@ header nav ul li{
 
 
 /* ------------------------------------------------------- */
-/* -------------------- Aside POPULAR -------------------- */
+/* -------------------- Section POPULAR -------------------- */
 /* ------------------------------------------------------- */
 #popularBloc{
     min-width: 400px;
@@ -681,16 +695,24 @@ header nav ul li{
     .m-hebergement{
         width: 50%;
         order: 3;
-        border: none;
-        border-bottom: #0065FC solid 3px;
+        border-top: none;
+        border-bottom: #cfcfcf solid 2px;
+    }
+    .m-hebergement:hover{
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
     }
     /* Lien Activité */
     .m-activite{
         width: 50%;
         order: 4;
-        border-bottom: #cfcfcf solid 3px;
+        border-top: none;
+        border-bottom: #cfcfcf solid 2px;
     }
-
+    .m-activite:hover{
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    }
     /* Section HEBERGEMENT */
     #resultBloc{
         background-color: #FFFFFF;
@@ -768,16 +790,24 @@ header nav ul li{
     .m-hebergement{
         width: 50%;
         order: 3;
-        border: none;
-        border-bottom: #0065FC solid 3px;
+        border-top: none;
+        border-bottom: #cfcfcf solid 2px;
+    }
+    .m-hebergement:hover{
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
     }
     /* Lien Activité */
     .m-activite{
         width: 50%;
         order: 4;
-        border-bottom: #cfcfcf solid 3px;
+        border-top: none;
+        border-bottom: #cfcfcf solid 2px;
     }
-
+    .m-activite:hover{
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    }
     /* Section Recherche */
     .formSearch{
         justify-content: center;

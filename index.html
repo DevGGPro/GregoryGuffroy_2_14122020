@@ -23,11 +23,11 @@
                     </li>
                     <!-- Lien Hébergement -->
                     <li class="m-hebergement flex jst-ctr algn-itm-ctr">
-                        <a class="no-txt-deco cl-blue " href="#ancre_hebergement">Hébergements</a>
+                        <a class="no-txt-deco cl-black" href="#ancre_hebergement">Hébergements</a>
                     </li>
                     <!-- Lien Activité -->
                     <li class="m-activite flex jst-ctr algn-itm-ctr">
-                        <a class="no-txt-deco cl-black cl-blue-hvr" href="#ancre_activite">Activités</a>
+                        <a class="no-txt-deco cl-black" href="#ancre_activite">Activités</a>
                     </li>
                     <!-- lien S'inscrire -->
                     <li class="m-inscrire flex jst-ctr algn-itm-ctr">
@@ -39,46 +39,46 @@
             
 
 
-        <!-- Section Recherche -->
-        <section id="searchBloc" class="bg-cl-white">
-        <!-- Le titre -->
-        <div class="sb-text">
-            <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>  
-            <p>En plein centre ville ou en pleine nature</p>
+        <!-- DIV Recherche -->
+        <div id="searchBloc" class="bg-cl-white">
+            <!-- Le titre -->
+            <div class="sb-text">
+                <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>  
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <!-- le champ de recherche -->
+            <form class="formSearch flex" method="post" action="index.html">
+                <i class="fas-loc bg-cl-grey flex jst-ctr algn-itm-ctr fas fa-map-marker-alt"></i>
+                <input class="fdSearch bold" type="text" name="recherche" placeholder="Votre recherche" autofocus>
+                <input class="btnSearch bg-cl-blue cl-white bold cursor-hvr" type="submit" name="envoyer" value="Rechercher">
+                <button class="btnSearchHidden bg-cl-blue cl-white cursor-hvr"><i class=" flex jst-ctr algn-itm-ctr fas fa-search"></i></button>
+            </form>
+            <!-- les tags -->
+            <div class="tags flex algn-itm-ctr">
+                <h3>Filtres</h3>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-money-bill-wave"></i>
+                    <span class="bold">Economique</span>
+                </div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-child"></i>
+                    <span class="bold">Familial</span>
+                </div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-heart"></i>
+                    <span class="bold">Romantique</span>
+                </div>
+                <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
+                    <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-dog"></i>
+                    <span class="bold">Animaux autorisés</span>
+                </div>
+            </div>
+            <!-- La bulle info -->
+            <div class="info flex algn-itm-ctr">
+                <span class="info-child"><i class="flex algn-itm-ctr jst-ctr cl-blue fas fa-info"></i></span>
+                <span class="info-child">Plus de 500 logements sont disponibles dans cette ville</span> 
+            </div>
         </div>
-        <!-- le champ de recherche -->
-        <form class="formSearch flex" method="post" action="index.html">
-            <i class="fas-loc bg-cl-grey flex jst-ctr algn-itm-ctr fas fa-map-marker-alt"></i>
-            <input class="fdSearch bold" type="text" name="recherche" placeholder="Votre recherche" autofocus>
-            <input class="btnSearch bg-cl-blue cl-white bold cursor-hvr" type="submit" name="envoyer" value="Rechercher">
-            <button class="btnSearchHidden bg-cl-blue cl-white cursor-hvr"><i class=" flex jst-ctr algn-itm-ctr fas fa-search"></i></button>
-         </form>
-        <!-- les tags -->
-        <div class="tags flex algn-itm-ctr">
-            <h3>Filtres</h3>
-            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
-                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-money-bill-wave"></i>
-                <span class="bold">Economique</span>
-            </div>
-            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
-                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-child"></i>
-                <span class="bold">Familial</span>
-            </div>
-            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
-                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-heart"></i>
-                <span class="bold">Romantique</span>
-            </div>
-            <div class="tags-child bg-cl-blue-hvr cl-white-hvr transform cursor-hvr">
-                <i class="in-flex jst-ctr algn-itm-ctr bg-cl-lblue cl-blue fas fa-dog"></i>
-                <span class="bold">Animaux autorisés</span>
-            </div>
-        </div>
-        <!-- La bulle info -->
-        <div class="info flex algn-itm-ctr">
-            <span class="info-child"><i class="flex algn-itm-ctr jst-ctr cl-blue fas fa-info"></i></span>
-            <span class="info-child">Plus de 500 logements sont disponibles dans cette ville</span> 
-        </div>
-        </section>
 
 
 
@@ -218,8 +218,8 @@
             </section> 
 
 
-            <!-- Aside POPULAR -->
-            <aside id="popularBloc" class="bg-cl-grey">
+            <!-- Section POPULAR -->
+            <section id="popularBloc" class="bg-cl-grey">
                 <div class="pb-txt">
                     <h1 class="flex jst-bt">Les plus populaires <i class="fas fa-chart-line"></i></h1>
                 </div>
@@ -285,14 +285,14 @@
                         </a>
                     </div>
                 </div>
-            </aside>
+            </section>
 
 
             <!-- Section Activitée -->
             <section id="activiteBloc" class="flex jst-ctr">
                 <div class="act-txt">
                     <h1 id="ancre_activite">Activités à Marseille</h1>
-                </div>
+                </div> 
                 <div class="ctnr-act flex col algn-itm-ctr jst-ar">
                     <!-- Premier element -->
                     <div class="element">
